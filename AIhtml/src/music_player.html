@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>音乐播放器 - AI探索者</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/music_player.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>AI探索者</h1>
+            <ul>
+                <li><a href="../index.html">首页</a></li>
+                <li><a href="ai_list.html">AI列表</a></li>
+                <li><a href="ai_websites.html">AI官网</a></li>
+                <li><a href="music_player.html">音乐</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <div class="music-player-container">
+            <div class="player-header">
+                <h2>放松音乐</h2>
+                <p>在探索AI的同时享受美妙的音乐</p>
+            </div>
+            
+            <div class="song-info">
+                <div class="song-title" id="songTitle">正在加载...</div>
+            </div>
+            
+            <div class="player-controls">
+                <button class="control-btn" id="prevBtn" title="上一首">⏮</button>
+                <button class="control-btn play-pause" id="playBtn" title="播放">▶</button>
+                <button class="control-btn" id="pauseBtn" title="暂停">⏸</button>
+                <button class="control-btn" id="nextBtn" title="下一首">⏭</button>
+            </div>
+            
+            <audio id="audioPlayer" preload="metadata"></audio>
+        </div>
+    </main>
+</body>
+</html>

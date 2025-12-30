@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>注册 - AI探索者</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/register.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>AI探索者</h1>
+            <ul>
+                <li><a href="index.html">首页</a></li>
+                <li><a href="src/ai_list.html">AI列表</a></li>
+                <li><a href="src/ai_websites.html">AI官网</a></li>
+                <li><a href="src/music_player.html">音乐</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <div class="auth-container">
+            <h2>用户注册</h2>
+            <form action="login.html" method="get">
+                <div class="form-group">
+                    <label for="username">用户名</label>
+                    <input type="text" id="username" name="username">
+                </div>
+                <div class="form-group">
+                    <label for="email">邮箱</label>
+                    <input type="email" id="email" name="email">
+                </div>
+                <div class="form-group">
+                    <label for="password">密码</label>
+                    <input type="password" id="password" name="password">
+                </div>
+                <div class="form-group">
+                    <label for="confirm-password">确认密码</label>
+                    <input type="password" id="confirm-password" name="confirm-password">
+                </div>
+                <button type="submit" class="btn">注册</button>
+            </form>
+            <div class="auth-links">
+                <p>已有账号？ <a href="login.html">立即登录</a></p>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

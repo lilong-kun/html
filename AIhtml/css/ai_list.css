@@ -1,0 +1,139 @@
+/* AI列表页面样式 */
+.ai-list-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.ai-list-header h2 {
+    font-size: 2.2rem;
+    color: #333;
+    margin-bottom: 0.8rem;
+}
+
+.ai-list-header p {
+    color: #666;
+    font-size: 1.1rem;
+}
+
+.ai-grid {
+    display: grid;
+    /* 改为固定3列布局 */
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.ai-card {
+    background: white;
+    border-radius: 8px;
+    padding: 1.2rem;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.ai-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.ai-card h3 {
+    color: #333;
+    font-size: 1.2rem;
+    margin-bottom: 0.6rem;
+    border-bottom: 1px solid #667eea;
+    padding-bottom: 0.4rem;
+}
+
+.ai-card p {
+    color: #666;
+    margin-bottom: 1rem;
+    line-height: 1.4;
+    font-size: 0.9rem;
+    flex-grow: 1;
+}
+
+.ai-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    margin-top: auto;
+}
+
+.tag {
+    background: #667eea;
+    color: white;
+    padding: 0.2rem 0.6rem;
+    border-radius: 12px;
+    font-size: 0.75rem;
+    font-weight: 500;
+}
+
+.tag.free {
+    background: #48bb78;
+}
+
+.tag.premium {
+    background: #ed8936;
+}
+
+.tag.api {
+    background: #9f7aea;
+}
+
+/* 紧凑布局 - 用于需要显示更多卡片的页面 */
+.compact-grid {
+    /* 保持与主网格相同的3列布局 */
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.compact-card {
+    padding: 0.8rem;
+    border-radius: 6px;
+}
+
+.compact-card h3 {
+    font-size: 1rem;
+    margin-bottom: 0.4rem;
+}
+
+.compact-card p {
+    font-size: 0.8rem;
+    margin-bottom: 0.8rem;
+}
+
+/* 大屏幕保持3列 */
+@media (min-width: 1024px) {
+    .ai-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .ai-list-header h2 {
+        font-size: 1.8rem;
+    }
+    
+    .ai-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+    
+    .ai-card {
+        padding: 1rem;
+    }
+    
+    .ai-card h3 {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .ai-grid {
+        grid-template-columns: 1fr;
+    }
+}
