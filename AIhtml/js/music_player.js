@@ -8,13 +8,6 @@ document.addEventListener('DOMContentLoaded', function() {
     const songTitle = document.getElementById('songTitle');
     const songList = document.getElementById('songList');
     
-    // 音乐列表
-    const songs = [
-        { title: "轻松旋律1", src: "../music/song1.mp3" },
-        { title: "放松节奏2", src: "../music/song2.mp3" },
-        { title: "宁静钢琴3", src: "../music/song3.mp3" }
-    ];
-    
     let currentSongIndex = 0;
     
     // 加载歌曲
