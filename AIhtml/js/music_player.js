@@ -8,6 +8,11 @@ document.addEventListener('DOMContentLoaded', function() {
     const songTitle = document.getElementById('songTitle');
     const songList = document.getElementById('songList');
     
+    // 音乐列表
+    const songs = [
+        { title: "下山", src: "../music/下山.mp3" }
+    ];
+    
     let currentSongIndex = 0;
     
     // 加载歌曲
